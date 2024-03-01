@@ -1,0 +1,190 @@
+/* === Common === */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #e5f4ff;
+
+  --light-grey: #808080;
+  --grey: #181818;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+}
+
+.app {
+  width: 1200px;
+  display: flex;
+  background: #fff;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1050px;
+  padding-top: 50px;
+}
+
+.not-found,
+.error-display {
+  width: 50%;
+  font-size: 34px;
+  font-weight: 500;
+  text-align: center;
+  color: red;
+  margin: 0 auto;
+}
+
+/* === Header === */
+
+.logo {
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.search {
+  background: none;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  padding: 8px 10px;
+  outline: none;
+  color: var(--grey);
+}
+
+.search::placeholder {
+  color: var(--light-grey);
+}
+
+#sort {
+  background: none;
+  color: var(--grey);
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+}
+
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav__link {
+  padding: 8px 15px;
+  transition: background 0.2s ease;
+}
+
+.nav__link:hover {
+  background: #c9e9ff;
+  border-radius: 5px;
+}
+
+.nav__link a {
+  color: var(--light-grey);
+}
+
+.update {
+  cursor: pointer;
+  background: none;
+  color: #404040;
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+  transition: border 0.3s ease, box-shadow 0.3s ease;;
+}
+
+.update:hover {
+  border: 1px solid #c9e9ff;
+  box-shadow: 0 0 20px rgba(57, 186, 197, 0.3);
+}
+
+/* === Users === */
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  gap: 35px;
+}
+
+.user {
+  width: 300px;
+  display: flex;
+  padding: 20px 0 20px 25px;
+  border-radius: 10px;
+  color: #000;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.user:hover {
+  box-shadow: 0 0 30px rgba(57, 186, 197, 0.3);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-info i {
+  margin-right: 10px;
+  color: var(--grey);
+}
+
+.user-badge {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-logo {
+  padding: 6px 20px;
+  border-radius: 50%;
+  background: #c9e9ff;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.user-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--grey);
+}
+
+.user-email,
+.user-phone {
+  font-weight: 500;
+  color: var(--grey);
+}
+
+.user-email {
+  font-size: 16px;
+}
+
